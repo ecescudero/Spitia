@@ -48,7 +48,7 @@ const KN = {
   whatsapp: _deobf("FhETFxEUFxQWExU="),
   agente: "Eduardo"
 };
-const APP_URL = "https://spitia-mas.netlify.app/";
+const APP_URL = "https://spitia.vercel.app/";
 const LS_DATA = "kn_conserje_plus_v1";
 const LS_SESSION = "kn_conserje_session_v1";
 const IS_LOCAL = DB_URL === "LOCAL";
@@ -3807,7 +3807,7 @@ function App() {
   const misAvisos = appData.avisos.filter(a => a.conserjeId === session.id);
   return <ConserjeApp conserje={conserje} avisos={misAvisos} alertas={appData.alertas} anuncios={appData.anuncios} onAddAviso={addAviso} onLogout={handleLogout} onSolicitarBaja={solicitarBajaDatos} justRegistered={justRegistered} onDismissWelcome={() => setJustRegistered(null)} />;
 }
-console.log("%cSpitia+ — build 2026-09-23-b (firma con enlace a la app en la difusión)", "color:#C49A3C;font-weight:bold");
+console.log("%cSpitia+ — build 2026-09-24-a (migrado a Vercel, APP_URL actualizada)", "color:#C49A3C;font-weight:bold");
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);</script>
 </body>
 </html>
